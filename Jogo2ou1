@@ -1,0 +1,42 @@
+Algoritmo "Jogo2ou1Mapa"
+
+Var 
+		A, C, P: Inteiro
+		vencedor: Caractere
+
+Inicio
+		Escreva("André escolha 2 ou 1: ")
+		Leia(A)
+		Enquanto (A <= 0) ou (A >= 3) faça
+			Escreva("Numero inválido! Digite novamente: ")
+			Leia(A)
+		Fim_enquanto
+		Escreva("Carlos escolha 2 ou 1: ")
+		Leia(C)
+		Enquanto (C <= 0) ou (C >= 3) faça
+			Escreva("Numero inválido! Digite novamente: ")
+			Leia(C)
+		Fim_enquanto
+		Escreva("Pietro escolha 2 ou 1: ")
+		Leia(P)
+		Enquanto (P <= 0) ou (P >= 3) faça
+			Escreva("Numero inválido! Digite novamente: ")
+			Leia(P)
+		Fim_enquanto
+		Se (A <> C) e (A <> P) e (C = P) então
+			vencedor <- "A"			
+		Senão
+			Se (C <> A) e (C <> P) e (A = P) então
+			vencedor <- "C"
+			Senão
+				Se (P <> A) e (P <> C) e (A = C) então
+				Vencedor <- "P"
+				Senão
+					Se (A = C) e (A = P) e (C = P) então
+					Vencedor <- "*"	
+					Fim_se
+ 				Fim_se
+			Fim_se
+		Fim_se
+		Escreva(vencedor)
+Fim
