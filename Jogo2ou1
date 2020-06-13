@@ -1,4 +1,4 @@
-Algoritmo "Jogo2ou1Mapa"
+Algoritmo "Jogo2ou1"
 
 Var 
 		A, C, P: Inteiro
